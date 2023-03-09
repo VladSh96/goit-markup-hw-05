@@ -52,6 +52,9 @@ img {
     padding: 6px 22px;
     border-radius: 4px;
 
+    transition: color , background-color,box-shadow, 
+    250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     color: var(--title-text-color);
     background-color: var(--white-color);
     border-color: transparent;
@@ -71,6 +74,7 @@ img {
 .button.seconadry{
     color: var(--title-text-color);
     background-color: var(--primery-bgc);
+    
 }
 .button.seconadry:hover,
 .button.seconadry:focus{
@@ -123,6 +127,8 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -156,6 +162,7 @@ border-radius: 2px;
     align-items: center;
     fill: currentColor;
     
+    
 }
 .envelope{
     width: 16px;
@@ -180,6 +187,8 @@ border-radius: 2px;
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts .contacts-link:hover,
@@ -354,6 +363,8 @@ border-radius: 2px;
     border-radius: 50%;
     width: 44px;
     height: 44px;
+
+    transition: background-color,fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social .link:hover,
 .social .link:focus{
@@ -387,6 +398,7 @@ border-radius: 2px;
     width: 170px;
     height: 92px;
     fill: #AFB1B8;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .link:hover,
 .clients .link:focus {
@@ -428,6 +440,7 @@ footer{
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-footer .link:hover,
@@ -469,6 +482,7 @@ footer{
     background: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden{
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
@@ -550,6 +564,7 @@ footer{
 }
 .work-link {
     text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-link:hover,
 .work-link:focus{
